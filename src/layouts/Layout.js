@@ -6,7 +6,7 @@ export const Layout = ({ children }) => {
             <div className="fixed w-full">
                 <Navbar/>
             </div>
-           {children}
+            {children}
         </div>
     )
 }

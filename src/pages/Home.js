@@ -17,22 +17,24 @@ export const Home = () => {
       }, []);
   return (
     <div id="home" className="bg-slate-900 h-screen flex flex-col justify-center justify-items-center content-center items-center text-white">
-      <h1 className="font-medium text-5xl font-sans">
+      <h1 className="font-medium text-5xl font-sans ">
         LALO LEONEL MAMANI
       </h1>
       <TypeWriterEffect
-        textStyle={{ fontSize: 40 }}
+        textStyle={{ fontSize: 40}}// position: "absolute", backgroundColor: "red" 
         startDelay={100}
         cursorColor="white"
         text="Desarrollador Frontend"
         typeSpeed={100}
         eraseSpeed={100}
         />
+
         <Particles 
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
-          options={{
+          options={{ 
+            fullScreen: {enable: false},
             fpsLimit: 50,
             interactivity: {
               events: {
