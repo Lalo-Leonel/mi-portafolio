@@ -1,20 +1,17 @@
+import { SubMenu } from "../components/SubMenu";
 import { Icon } from "../components/Icon";
 
 export const About = () => {
   return (
     <div id="aboutMe" className="h-screen bg-slate-900 pl-10">
-      <div className="flex flex-row justify-start items-center pt-20">
-        <div className="bg-red-500 h-1 w-40 mr-4"></div>
-        <h4 className="text-white text-lg font-sans">Sobre mi</h4>
-      </div>
-
+      <SubMenu description={"Sobre mi"}/>
       <div className="flex flex-row gap-5 justify-center items-center">
         <div>
           <div className="flex flex-col justify-start items-start">
             <h4 className="text-white text-3xl font-extrabold font-sans mb-5">
               Lalo Leonel Mamani Ccanahuire
             </h4>
-            <div className="bg-red-500 h-1 w-40 mr-4"></div>
+            <div className="bg-sky-500 h-1 w-40 mr-4"></div>
           </div>
           <div className="text-white text-base font-light my-5">
             Soy Desarrollador Frontend y egresado en Ingeniería Informática y de
